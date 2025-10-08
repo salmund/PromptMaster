@@ -166,15 +166,20 @@ class ContextManager:
             pyperclip.copy("")
             
             # Petit délai pour s'assurer que le presse-papiers est vide
-            time.sleep(0.05)
+            time.sleep(0.1)
+            
+            # Créer un nouveau controller keyboard temporaire pour éviter les conflits
+            temp_keyboard = KeyboardController()
             
             # Simuler Ctrl+C pour copier la sélection
-            with self.keyboard.pressed(Key.ctrl):
-                self.keyboard.press('c')
-                self.keyboard.release('c')
+            temp_keyboard.press(Key.ctrl)
+            time.sleep(0.05)
+            temp_keyboard.press('c')
+            temp_keyboard.release('c')
+            temp_keyboard.release(Key.ctrl)
             
             # Attendre que le texte soit copié
-            time.sleep(0.1)
+            time.sleep(0.2)
             
             # Récupérer le texte copié
             selected_text = pyperclip.paste()

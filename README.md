@@ -1,15 +1,299 @@
-# 🎯 PromptMaster v3.0 - Fluent Design
+# 🎯 PromptMaster v3.2 - Simple, Rapide, Sans Friction
 
-**PromptMaster** est un gestionnaire de prompts rapide et élégant avec **intelligence contextuelle** et **design Microsoft Fluent**, inspiré de Raycast. Accédez instantanément à vos prompts favoris avec un simple raccourci clavier !
+**PromptMaster** est un gestionnaire de prompts ultra-rapide et minimaliste avec **édition inline**, **sauvegarde automatique**, et **design Microsoft Fluent**. Inspiré de Raycast, optimisé pour la vitesse et la simplicité.
 
-![Version](https://img.shields.io/badge/version-3.0.0-blue)
+![Version](https://img.shields.io/badge/version-3.2.0-blue)
 ![Python](https://img.shields.io/badge/python-3.8+-green)
 ![Design](https://img.shields.io/badge/design-Fluent-purple)
 ![License](https://img.shields.io/badge/license-MIT-orange)
 
-## ✨ Nouveautés v3.0 - Design Fluent
+## ✨ v3.2 - Simplicité Absolue
 
-### 🎨 Interface Complètement Redesignée
+### 🚀 Philosophie : Zéro Friction
+- **Toggle instantané** : Ctrl+Space s'ouvre en <100ms, aucun délai
+- **Aucune complexité** : Plus de capture automatique, plus de scoring, juste l'essentiel
+- **Édition directe** : Cliquez, modifiez, c'est sauvegardé automatiquement
+- **Interface épurée** : Recherche → Édite → Copie. C'est tout.
+
+### 📝 Fonctionnalités Principales
+
+#### Édition Sans Friction
+- **Édition inline** : Modifiez titre, catégorie, tags et contenu directement dans l'interface
+- **Autosave** : Sauvegarde automatique 0.8s après votre dernière modification
+- **Aucun dialogue** : Tout se passe dans la fenêtre principale
+- **Navigation fluide** : Utilisez ↑↓ pour naviguer, les modifications sont déjà enregistrées
+
+#### Interface Ultra-Rapide
+- **Ctrl+Space** : Ouvrir/Fermer instantanément
+- **Recherche temps réel** : Tapez, les résultats s'affichent immédiatement
+- **Prévisualisation live** : Le prompt s'affiche à droite pendant que vous naviguez
+- **Enter pour copier** : Un simple Enter et le prompt est dans votre presse-papiers
+
+#### Gestion Simple
+- **Ajout facile** : Bouton ➕ Nouveau → Remplissez → Ctrl+Enter
+- **Suppression rapide** : Touche Del → Confirmation → Supprimé
+- **Organisation** : Catégories et tags optionnels pour retrouver vos prompts
+- **Tri intelligent** : Les prompts les plus utilisés remontent automatiquement
+
+## 🎨 Design Fluent (v3.0)
+- **Microsoft Fluent Design System** : Interface moderne Windows 11
+- **PySide6-Fluent-Widgets** : Composants premium
+- **Thème sombre** : Design élégant avec accent violet (#bd93f9)
+- **Cards et ombres** : Profondeur visuelle professionnelle
+
+## 🚀 Installation
+
+### Prérequis
+- Python 3.8 ou supérieur
+- Windows (pour l'instant - support macOS/Linux à venir)
+
+### Installation Rapide
+
+```powershell
+# Cloner le projet
+git clone https://github.com/salmund/PromptMaster.git
+cd PromptMaster
+
+# Installer les dépendances
+pip install -r requirements.txt
+
+# Lancer l'application
+python main.py
+```
+
+### Dépendances
+```
+PySide6>=6.6.0
+PySide6-Fluent-Widgets>=1.6.3
+pynput>=1.7.6
+pyperclip>=1.8.2
+```
+
+## 🎮 Guide d'Utilisation
+
+### Démarrage Rapide
+
+1. **Lancer l'application**
+   ```powershell
+   python main.py
+   ```
+
+2. **Ouvrir avec Ctrl+Space**
+   - L'application démarre en arrière-plan
+   - Appuyez sur `Ctrl+Space` n'importe où
+   - La fenêtre apparaît instantanément
+
+3. **Ajouter votre premier prompt**
+   - Cliquez sur `➕ Nouveau`
+   - Remplissez le titre et le contenu
+   - `Ctrl+Enter` ou cliquez sur Enregistrer
+
+4. **Utiliser un prompt**
+   - `Ctrl+Space` pour ouvrir
+   - Tapez pour rechercher
+   - `↑↓` pour naviguer
+   - `Enter` pour copier dans le presse-papiers
+   - `Échap` pour fermer
+
+### Workflow Quotidien
+
+```
+Scénario : Utiliser un prompt ChatGPT
+
+1. Ctrl+Space                    → Fenêtre s'ouvre
+2. Tapez "chatgpt"              → Résultats filtrés
+3. ↓ pour sélectionner          → Prévisualisation à droite
+4. Enter                        → Copié !
+5. Collez dans ChatGPT          → Profit
+
+Temps total : 3 secondes ⚡
+```
+
+### Édition en Temps Réel
+
+```
+Scénario : Améliorer un prompt existant
+
+1. Ctrl+Space                    → Ouvrir
+2. Cliquez sur le prompt        → S'affiche à droite
+3. Modifiez le contenu          → Tapez directement
+4. Attendez 0.8s                → Sauvegardé automatiquement !
+5. ↓ pour le prompt suivant     → Déjà enregistré
+
+Aucun bouton "Enregistrer" nécessaire 🎯
+```
+
+## ⌨️ Raccourcis Clavier
+
+| Raccourci | Action |
+|-----------|--------|
+| `Ctrl+Space` | Ouvrir/Fermer l'application |
+| `↑` `↓` | Naviguer entre les prompts |
+| `Enter` | Copier le prompt sélectionné |
+| `Del` | Supprimer le prompt |
+| `Échap` | Fermer la fenêtre |
+| `Ctrl+Enter` | Enregistrer (dans le dialogue d'ajout) |
+
+**Pas de raccourci pour sauvegarder l'édition inline → C'est automatique !** ✨
+
+## 📊 Fonctionnalités Détaillées
+
+### Recherche Intelligente
+- **Full-text search** : Recherche dans titre, contenu, catégorie et tags
+- **Temps réel** : Les résultats s'affichent pendant que vous tapez
+- **Tri automatique** : Les prompts les plus utilisés en premier
+
+### Édition Inline
+- **Tous les champs éditables** : Titre, catégorie, tags, contenu
+- **Autosave intelligent** : Debouncing pour éviter les sauvegardes inutiles
+- **Protection** : Pas de sauvegarde pendant le chargement
+- **Feedback discret** : Message console uniquement
+
+### Organisation
+- **Catégories** : Organisez par thème (Développement, Marketing, etc.)
+- **Tags** : Ajoutez plusieurs tags séparés par des virgules
+- **Compteur d'usage** : Suivez vos prompts les plus utilisés
+- **Tri intelligent** : Tri par usage décroissant puis alphabétique
+
+## 📁 Structure du Projet
+
+```
+PromptMaster/
+├── main.py                      # Point d'entrée avec hotkey
+├── gui.py                       # Interface Fluent (v3.2 simplifiée)
+├── database.py                  # Gestion SQLite
+├── context_manager.py           # Détection contexte (non utilisé en v3.2)
+├── promptmaster.db              # Base de données SQLite
+├── requirements.txt             # Dépendances
+└── docs/
+    ├── README.md                # Ce fichier
+    ├── QUICKSTART.md            # Guide de démarrage
+    ├── INLINE_EDITING.md        # Guide édition inline
+    └── FLUENT_DESIGN.md         # Guide Fluent Design
+```
+
+## 🔧 Configuration
+
+### Changer le Thème
+
+Éditez `gui.py` ligne ~44 :
+
+```python
+# Thème sombre (par défaut)
+setTheme(Theme.DARK)
+
+# Thème clair
+setTheme(Theme.LIGHT)
+```
+
+### Changer la Couleur d'Accent
+
+Éditez `gui.py` ligne ~45 :
+
+```python
+# Violet Dracula (par défaut)
+setThemeColor('#bd93f9')
+
+# Autres couleurs
+setThemeColor('#0078D4')  # Bleu Windows
+setThemeColor('#FF6B6B')  # Rouge
+setThemeColor('#4ECDC4')  # Turquoise
+```
+
+### Changer le Raccourci Clavier
+
+Éditez `main.py` lignes ~19-28 pour changer la combinaison de touches.
+
+## 💡 Conseils Pro
+
+### Nommage des Prompts
+- **Titres courts et descriptifs** : "API REST Python" plutôt que "Comment créer une API REST en Python"
+- **Le contenu est dans la prévisualisation** : Le titre sert juste à identifier
+
+### Organisation
+- **Catégories larges** : Développement, Marketing, Design, etc.
+- **Tags spécifiques** : python, api, rest, fastapi, etc.
+- **Consistance** : Utilisez toujours les mêmes noms de catégories
+
+### Performance
+- **Les prompts les plus utilisés remontent** : Pas besoin de favoris manuels
+- **Recherche partielle** : 2-3 lettres suffisent grâce à la prévisualisation
+- **Navigation clavier** : Plus rapide que la souris
+
+## 🐛 Dépannage
+
+### L'application ne démarre pas
+```powershell
+# Vérifier Python
+python --version  # Doit être 3.8+
+
+# Réinstaller les dépendances
+pip install -r requirements.txt --force-reinstall
+```
+
+### Ctrl+Space ne fonctionne pas
+- Vérifiez qu'aucune autre application n'utilise ce raccourci
+- Essayez de relancer l'application
+- Vérifiez les messages dans le terminal
+
+### Les modifications ne sont pas sauvegardées
+- Attendez 0.8s après votre dernière modification
+- Vérifiez les messages de sauvegarde dans le terminal
+- La base de données est dans `promptmaster.db`
+
+## � Historique des Versions
+
+### v3.2 (Actuel) - Simplicité Absolue
+- ✅ Suppression capture de texte automatique → Plus de délais
+- ✅ Suppression système de contexte → Interface simplifiée
+- ✅ Toggle ultra-rapide → <100ms
+- ✅ Dialogue d'ajout simplifié → MessageBoxBase
+- ✅ Documentation mise à jour
+
+### v3.1 - Édition Sans Friction
+- ✅ Édition inline avec autosave
+- ✅ Suppression des dialogues d'édition
+- ✅ Workflow ultra-fluide
+
+### v3.0 - Design Fluent
+- ✅ Migration vers PySide6-Fluent-Widgets
+- ✅ Interface Windows 11 moderne
+- ✅ Thème sombre/clair
+
+### v2.0 - Intelligence Contextuelle
+- ⚠️ Capture de texte (supprimée en v3.2)
+- ⚠️ Détection de contexte (supprimée en v3.2)
+- ✅ Prévisualisation temps réel (gardée)
+
+### v1.0 - Version Initiale
+- ✅ Recherche full-text
+- ✅ Raccourci global Ctrl+Space
+- ✅ Base de données SQLite
+
+## 🤝 Contribution
+
+Les contributions sont les bienvenues ! N'hésitez pas à :
+- Ouvrir des issues pour signaler des bugs
+- Proposer des nouvelles fonctionnalités
+- Soumettre des pull requests
+
+## 📄 Licence
+
+MIT License - Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+## 🙏 Remerciements
+
+- **Microsoft** : Fluent Design System
+- **Qt Company** : PySide6 framework
+- **zhiyiYo** : PySide6-Fluent-Widgets
+- **Raycast** : Inspiration du concept
+
+---
+
+**PromptMaster v3.2 - Simple. Rapide. Sans friction. 🚀**
+
+Créé avec ❤️ pour les utilisateurs qui veulent juste que ça marche.
+
 - **Microsoft Fluent Design System** : Look moderne Windows 11
 - **PySide6-Fluent-Widgets** : Composants premium et professionnels
 - **Effets Acryliques** : Transparence et flou élégants

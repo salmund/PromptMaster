@@ -67,18 +67,8 @@ class HotkeyListener(QObject):
             self.window.hide()
             print("🔽 Fenêtre masquée")
         else:
-            # Capturer le texte sélectionné avant d'afficher la fenêtre
-            selected_text = self.context_manager.capture_selected_text()
-            
-            # Si du texte est sélectionné, recréer la fenêtre pour ouvrir le dialogue
-            if selected_text:
-                print(f"📝 Texte capturé : {selected_text[:50]}...")
-                if self.window:
-                    self.window.close()
-                    self.window.deleteLater()
-                self.window = PromptMasterWindow(selected_text=selected_text)
-            # Sinon, créer la fenêtre si elle n'existe pas encore
-            elif not self.window:
+            # Créer la fenêtre si elle n'existe pas encore
+            if not self.window:
                 print("🔼 Fenêtre affichée")
                 self.window = PromptMasterWindow()
             else:
@@ -117,8 +107,6 @@ def main():
     print("🎯 PromptMaster est démarré !")
     print("="*50)
     print("Appuyez sur Ctrl + Space pour afficher l'application")
-    print("Sélectionnez du texte avant d'appuyer sur Ctrl + Space")
-    print("pour l'ajouter directement comme nouveau prompt !")
     print("Appuyez sur Échap pour la fermer")
     print("="*50 + "\n")
     

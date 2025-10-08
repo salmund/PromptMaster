@@ -1,26 +1,26 @@
-# 🎉 PromptMaster v3.0 - Récapitulatif Complet
+# 🎉 PromptMaster v3.2 - Récapitulatif Complet
 
 ## ✅ Toutes les Fonctionnalités Implémentées
 
-### 🎨 v3.0 - Design Fluent (ACTUEL)
+### 🚀 v3.2 - Simplicité Absolue (ACTUEL)
+- ✅ **Toggle ultra-rapide** : <100ms, aucun délai
+- ✅ **Interface épurée** : Suppression de toute complexité inutile
+- ✅ **Édition inline** : Modification directe dans le panneau
+- ✅ **Autosave** : Sauvegarde automatique après 0.8s
+- ✅ **Aucune friction** : Plus de capture automatique
+- ✅ **Focus performance** : Tout optimisé pour la vitesse
+- ✅ **Workflow simplifié** : Recherche → Édite → Copie
+
+### 🎨 v3.1 & v3.0 - Design Fluent
 - ✅ **Microsoft Fluent Design System** complet
 - ✅ **PySide6-Fluent-Widgets** intégré
 - ✅ Interface moderne Windows 11
-- ✅ Effets acryliques et transparents
 - ✅ Animations fluides et naturelles
 - ✅ InfoBars pour notifications
 - ✅ Cards élégantes avec ombres
 - ✅ Thème sombre (violet Dracula)
-- ✅ Support thème clair disponible
-
-### 🧠 v2.0 - Intelligence Contextuelle
-- ✅ **Capture de texte sélectionné** depuis n'importe quelle app
-- ✅ **Détection de contexte** (app active, fenêtre, site web)
-- ✅ **Recommandations intelligentes** basées sur le contexte
-- ✅ **Prévisualisation en temps réel** du contenu
-- ✅ **Suggestions automatiques** de catégorie et tags
-- ✅ **Scoring intelligent** des prompts
-- ✅ Navigation molette + clavier
+- ✅ **Édition inline** : Modifiez directement dans l'interface
+- ✅ **Autosave intelligent** : Aucun bouton "Enregistrer"
 
 ### ⚡ v1.0 - Fonctionnalités de Base
 - ✅ Recherche instantanée full-text
